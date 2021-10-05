@@ -119,11 +119,6 @@ int getProcess(int proc_n, int procpid[], Process process[]) {
     return counter;
 }
 
-void test() {
-    int state = getProcessfolder();
-}
-
-
 int cmpbypid(const void *a, const void *b) {
     int _a = *((int *)a), _b =  *((int *)b);
     return process[_a].pid > process[_b].pid;
@@ -166,6 +161,7 @@ void print(int root) {
         print(proc[i]);
 
     offset -= 4;
+
 }
 
 int main(int argc, char *argv[]) {
